@@ -4,8 +4,75 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "40e5cf11f7a5d7c0884a00fe60e5f3af",
+    "content-hash": "db59246fe5648842c3632f6763f372eb",
     "packages": [
+        {
+            "name": "akaunting/laravel-money",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/akaunting/laravel-money.git",
+                "reference": "4481e7f53c40ac184197ba2477de5e148c015a2a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/akaunting/laravel-money/zipball/4481e7f53c40ac184197ba2477de5e148c015a2a",
+                "reference": "4481e7f53c40ac184197ba2477de5e148c015a2a",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": ">=8.0",
+                "illuminate/support": ">=8.0",
+                "illuminate/view": ">=8.0",
+                "php": ">=8.0"
+            },
+            "require-dev": {
+                "illuminate/database": "^9.8",
+                "mockery/mockery": ">=1.4",
+                "phpunit/phpunit": ">=9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Akaunting\\Money\\Provider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Akaunting\\Money\\": "./src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Denis Duliçi",
+                    "email": "info@akaunting.com",
+                    "homepage": "https://akaunting.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Currency formatting and conversion package for Laravel",
+            "keywords": [
+                "convert",
+                "currency",
+                "format",
+                "laravel",
+                "money"
+            ],
+            "support": {
+                "issues": "https://github.com/akaunting/laravel-money/issues",
+                "source": "https://github.com/akaunting/laravel-money/tree/2.1.0"
+            },
+            "time": "2022-04-19T17:23:49+00:00"
+        },
         {
             "name": "brick/math",
             "version": "0.11.0",
@@ -2995,6 +3062,330 @@
             "time": "2023-04-15T23:01:58+00:00"
         },
         {
+            "name": "squirephp/airlines",
+            "version": "v3.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/squirephp/airlines.git",
+                "reference": "b4fd07cb8ae4c36acf8b2e0ddd72957daf02abb9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/squirephp/airlines/zipball/b4fd07cb8ae4c36acf8b2e0ddd72957daf02abb9",
+                "reference": "b4fd07cb8ae4c36acf8b2e0ddd72957daf02abb9",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^8.0|^9.0|^10.0",
+                "php": "^8.0",
+                "squirephp/model": "self.version",
+                "squirephp/rule": "self.version"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Squire\\AirlinesServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Squire\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dan Harrin",
+                    "email": "dan@danharrin.com"
+                }
+            ],
+            "description": "A library containing Squire's Airline model.",
+            "homepage": "https://github.com/squirephp",
+            "keywords": [
+                "squire"
+            ],
+            "support": {
+                "issues": "https://github.com/squirephp/squire/issues",
+                "source": "https://github.com/squirephp/squire"
+            },
+            "time": "2023-02-18T12:44:17+00:00"
+        },
+        {
+            "name": "squirephp/airlines-en",
+            "version": "v3.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/squirephp/airlines-en.git",
+                "reference": "304cf4079b3c9f816e32837a3ef4d56430e8d9fe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/squirephp/airlines-en/zipball/304cf4079b3c9f816e32837a3ef4d56430e8d9fe",
+                "reference": "304cf4079b3c9f816e32837a3ef4d56430e8d9fe",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^8.0|^9.0|^10.0",
+                "php": "^8.0",
+                "squirephp/airlines": "self.version",
+                "squirephp/repository": "self.version"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Squire\\AirlinesEnServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Squire\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dan Harrin",
+                    "email": "dan@danharrin.com"
+                }
+            ],
+            "description": "A library containing the English translation of Squire's Airline model.",
+            "homepage": "https://github.com/squirephp",
+            "keywords": [
+                "squire"
+            ],
+            "support": {
+                "issues": "https://github.com/squirephp/squire/issues",
+                "source": "https://github.com/squirephp/squire"
+            },
+            "time": "2023-02-18T12:44:19+00:00"
+        },
+        {
+            "name": "squirephp/airports",
+            "version": "v3.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/squirephp/airports.git",
+                "reference": "d03a5d7aea44c96e0034a38dab4cba177ac5af0a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/squirephp/airports/zipball/d03a5d7aea44c96e0034a38dab4cba177ac5af0a",
+                "reference": "d03a5d7aea44c96e0034a38dab4cba177ac5af0a",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^8.0|^9.0|^10.0",
+                "php": "^8.0",
+                "squirephp/model": "self.version",
+                "squirephp/rule": "self.version"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Squire\\AirportsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Squire\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dan Harrin",
+                    "email": "dan@danharrin.com"
+                }
+            ],
+            "description": "A library containing Squire's Airport model.",
+            "homepage": "https://github.com/squirephp",
+            "keywords": [
+                "squire"
+            ],
+            "support": {
+                "issues": "https://github.com/squirephp/squire/issues",
+                "source": "https://github.com/squirephp/squire"
+            },
+            "time": "2023-02-18T12:44:12+00:00"
+        },
+        {
+            "name": "squirephp/airports-en",
+            "version": "v3.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/squirephp/airports-en.git",
+                "reference": "9df1e74fef6ab5a227e7b4cc73a2096b906043de"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/squirephp/airports-en/zipball/9df1e74fef6ab5a227e7b4cc73a2096b906043de",
+                "reference": "9df1e74fef6ab5a227e7b4cc73a2096b906043de",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^8.0|^9.0|^10.0",
+                "php": "^8.0",
+                "squirephp/airports": "self.version",
+                "squirephp/repository": "self.version"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Squire\\AirportsEnServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Squire\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dan Harrin",
+                    "email": "dan@danharrin.com"
+                }
+            ],
+            "description": "A library containing the English translation of Squire's Airport model.",
+            "homepage": "https://github.com/squirephp",
+            "keywords": [
+                "squire"
+            ],
+            "support": {
+                "issues": "https://github.com/squirephp/squire/issues",
+                "source": "https://github.com/squirephp/squire"
+            },
+            "time": "2023-04-08T10:48:45+00:00"
+        },
+        {
+            "name": "squirephp/continents",
+            "version": "v3.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/squirephp/continents.git",
+                "reference": "6e28fab2591749e9cfe24dd6a0770088eaface45"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/squirephp/continents/zipball/6e28fab2591749e9cfe24dd6a0770088eaface45",
+                "reference": "6e28fab2591749e9cfe24dd6a0770088eaface45",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^8.0|^9.0|^10.0",
+                "php": "^8.0",
+                "squirephp/model": "self.version",
+                "squirephp/rule": "self.version"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Squire\\ContinentsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Squire\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dan Harrin",
+                    "email": "dan@danharrin.com"
+                }
+            ],
+            "description": "A library containing Squire's Continent model.",
+            "homepage": "https://github.com/squirephp",
+            "keywords": [
+                "squire"
+            ],
+            "support": {
+                "issues": "https://github.com/squirephp/squire/issues",
+                "source": "https://github.com/squirephp/squire"
+            },
+            "time": "2023-02-18T12:44:17+00:00"
+        },
+        {
+            "name": "squirephp/continents-en",
+            "version": "v3.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/squirephp/continents-en.git",
+                "reference": "50a9800f501c5b8836b38525958121a4ffa9ab0a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/squirephp/continents-en/zipball/50a9800f501c5b8836b38525958121a4ffa9ab0a",
+                "reference": "50a9800f501c5b8836b38525958121a4ffa9ab0a",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^8.0|^9.0|^10.0",
+                "php": "^8.0",
+                "squirephp/continents": "self.version",
+                "squirephp/repository": "self.version"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Squire\\ContinentsEnServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Squire\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dan Harrin",
+                    "email": "dan@danharrin.com"
+                }
+            ],
+            "description": "A library containing the English translation of Squire's Continent model.",
+            "homepage": "https://github.com/squirephp",
+            "keywords": [
+                "squire"
+            ],
+            "support": {
+                "issues": "https://github.com/squirephp/squire/issues",
+                "source": "https://github.com/squirephp/squire"
+            },
+            "time": "2023-02-18T12:44:19+00:00"
+        },
+        {
             "name": "squirephp/countries",
             "version": "v3.4.1",
             "source": {
@@ -3103,6 +3494,223 @@
             "time": "2023-02-18T12:44:18+00:00"
         },
         {
+            "name": "squirephp/currencies",
+            "version": "v3.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/squirephp/currencies.git",
+                "reference": "69f71ff2163fdc80b1f9496a46c165b87b5f150f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/squirephp/currencies/zipball/69f71ff2163fdc80b1f9496a46c165b87b5f150f",
+                "reference": "69f71ff2163fdc80b1f9496a46c165b87b5f150f",
+                "shasum": ""
+            },
+            "require": {
+                "akaunting/laravel-money": "^1.2|^2.1",
+                "illuminate/support": "^8.0|^9.0|^10.0",
+                "php": "^8.0",
+                "squirephp/model": "self.version",
+                "squirephp/rule": "self.version"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Squire\\CurrenciesServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Squire\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dan Harrin",
+                    "email": "dan@danharrin.com"
+                }
+            ],
+            "description": "A library containing Squire's Currency model.",
+            "homepage": "https://github.com/squirephp",
+            "keywords": [
+                "squire"
+            ],
+            "support": {
+                "issues": "https://github.com/squirephp/squire/issues",
+                "source": "https://github.com/squirephp/squire"
+            },
+            "time": "2023-02-18T12:44:15+00:00"
+        },
+        {
+            "name": "squirephp/currencies-en",
+            "version": "v3.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/squirephp/currencies-en.git",
+                "reference": "a4b347d73a0bd6a9e5ed93c14b24e4ae2d44c26d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/squirephp/currencies-en/zipball/a4b347d73a0bd6a9e5ed93c14b24e4ae2d44c26d",
+                "reference": "a4b347d73a0bd6a9e5ed93c14b24e4ae2d44c26d",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^8.0|^9.0|^10.0",
+                "php": "^8.0",
+                "squirephp/currencies": "self.version",
+                "squirephp/repository": "self.version"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Squire\\CurrenciesEnServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Squire\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dan Harrin",
+                    "email": "dan@danharrin.com"
+                }
+            ],
+            "description": "A library containing the English translation of Squire's Currency model.",
+            "homepage": "https://github.com/squirephp",
+            "keywords": [
+                "squire"
+            ],
+            "support": {
+                "issues": "https://github.com/squirephp/squire/issues",
+                "source": "https://github.com/squirephp/squire"
+            },
+            "time": "2023-02-18T12:44:16+00:00"
+        },
+        {
+            "name": "squirephp/gb-counties",
+            "version": "v3.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/squirephp/gb-counties.git",
+                "reference": "3be17fa32b84cd741d0bf50d5616ea31bddfeac9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/squirephp/gb-counties/zipball/3be17fa32b84cd741d0bf50d5616ea31bddfeac9",
+                "reference": "3be17fa32b84cd741d0bf50d5616ea31bddfeac9",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^8.0|^9.0|^10.0",
+                "php": "^8.0",
+                "squirephp/model": "self.version",
+                "squirephp/rule": "self.version"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Squire\\GbCountiesServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Squire\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dan Harrin",
+                    "email": "dan@danharrin.com"
+                }
+            ],
+            "description": "A library containing Squire's GbCounty model.",
+            "homepage": "https://github.com/squirephp",
+            "keywords": [
+                "squire"
+            ],
+            "support": {
+                "issues": "https://github.com/squirephp/squire/issues",
+                "source": "https://github.com/squirephp/squire"
+            },
+            "time": "2023-02-18T12:44:15+00:00"
+        },
+        {
+            "name": "squirephp/gb-counties-en",
+            "version": "v3.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/squirephp/gb-counties-en.git",
+                "reference": "192d928b2568b63bf7d9895f9f4290e4e21915f1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/squirephp/gb-counties-en/zipball/192d928b2568b63bf7d9895f9f4290e4e21915f1",
+                "reference": "192d928b2568b63bf7d9895f9f4290e4e21915f1",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^8.0|^9.0|^10.0",
+                "php": "^8.0",
+                "squirephp/gb-counties": "self.version",
+                "squirephp/repository": "self.version"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Squire\\GbCountiesEnServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Squire\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dan Harrin",
+                    "email": "dan@danharrin.com"
+                }
+            ],
+            "description": "A library containing the English translation of Squire's GbCounty model.",
+            "homepage": "https://github.com/squirephp",
+            "keywords": [
+                "squire"
+            ],
+            "support": {
+                "issues": "https://github.com/squirephp/squire/issues",
+                "source": "https://github.com/squirephp/squire"
+            },
+            "time": "2023-02-18T12:44:15+00:00"
+        },
+        {
             "name": "squirephp/model",
             "version": "v3.4.1",
             "source": {
@@ -3155,6 +3763,114 @@
                 "source": "https://github.com/squirephp/squire"
             },
             "time": "2023-02-18T12:44:15+00:00"
+        },
+        {
+            "name": "squirephp/regions",
+            "version": "v3.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/squirephp/regions.git",
+                "reference": "c28f9e9d124453020130df27df6933000c8c2b42"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/squirephp/regions/zipball/c28f9e9d124453020130df27df6933000c8c2b42",
+                "reference": "c28f9e9d124453020130df27df6933000c8c2b42",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^8.0|^9.0|^10.0",
+                "php": "^8.0",
+                "squirephp/model": "self.version",
+                "squirephp/rule": "self.version"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Squire\\RegionsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Squire\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dan Harrin",
+                    "email": "dan@danharrin.com"
+                }
+            ],
+            "description": "A library containing Squire's Region model.",
+            "homepage": "https://github.com/squirephp",
+            "keywords": [
+                "squire"
+            ],
+            "support": {
+                "issues": "https://github.com/squirephp/squire/issues",
+                "source": "https://github.com/squirephp/squire"
+            },
+            "time": "2023-02-18T12:44:18+00:00"
+        },
+        {
+            "name": "squirephp/regions-en",
+            "version": "v3.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/squirephp/regions-en.git",
+                "reference": "c3dd19c5791c976d141111d065c5e857d34e31ff"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/squirephp/regions-en/zipball/c3dd19c5791c976d141111d065c5e857d34e31ff",
+                "reference": "c3dd19c5791c976d141111d065c5e857d34e31ff",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^8.0|^9.0|^10.0",
+                "php": "^8.0",
+                "squirephp/regions": "self.version",
+                "squirephp/repository": "self.version"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Squire\\RegionsEnServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Squire\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dan Harrin",
+                    "email": "dan@danharrin.com"
+                }
+            ],
+            "description": "A library containing the English translation of Squire's Region model.",
+            "homepage": "https://github.com/squirephp",
+            "keywords": [
+                "squire"
+            ],
+            "support": {
+                "issues": "https://github.com/squirephp/squire/issues",
+                "source": "https://github.com/squirephp/squire"
+            },
+            "time": "2023-02-18T12:44:35+00:00"
         },
         {
             "name": "squirephp/repository",
@@ -3248,6 +3964,114 @@
                 }
             ],
             "description": "A library containing the base Squire rule class.",
+            "homepage": "https://github.com/squirephp",
+            "keywords": [
+                "squire"
+            ],
+            "support": {
+                "issues": "https://github.com/squirephp/squire/issues",
+                "source": "https://github.com/squirephp/squire"
+            },
+            "time": "2023-02-18T12:44:38+00:00"
+        },
+        {
+            "name": "squirephp/timezones",
+            "version": "v3.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/squirephp/timezones.git",
+                "reference": "5dc7f8c7f632c64a8013ba964ffe2621c3bca27e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/squirephp/timezones/zipball/5dc7f8c7f632c64a8013ba964ffe2621c3bca27e",
+                "reference": "5dc7f8c7f632c64a8013ba964ffe2621c3bca27e",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^8.0|^9.0|^10.0",
+                "php": "^8.0",
+                "squirephp/model": "self.version",
+                "squirephp/rule": "self.version"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Squire\\TimezonesServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Squire\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dan Harrin",
+                    "email": "dan@danharrin.com"
+                }
+            ],
+            "description": "A library containing Squire's Timezone model.",
+            "homepage": "https://github.com/squirephp",
+            "keywords": [
+                "squire"
+            ],
+            "support": {
+                "issues": "https://github.com/squirephp/squire/issues",
+                "source": "https://github.com/squirephp/squire"
+            },
+            "time": "2023-02-18T12:44:40+00:00"
+        },
+        {
+            "name": "squirephp/timezones-en",
+            "version": "v3.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/squirephp/timezones-en.git",
+                "reference": "b321f830f358f98675be639e84b213a5345950d1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/squirephp/timezones-en/zipball/b321f830f358f98675be639e84b213a5345950d1",
+                "reference": "b321f830f358f98675be639e84b213a5345950d1",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^8.0|^9.0|^10.0",
+                "php": "^8.0",
+                "squirephp/repository": "self.version",
+                "squirephp/timezones": "self.version"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Squire\\TimezonesEnServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Squire\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dan Harrin",
+                    "email": "dan@danharrin.com"
+                }
+            ],
+            "description": "A library containing the English translation of Squire's Timezone model.",
             "homepage": "https://github.com/squirephp",
             "keywords": [
                 "squire"
